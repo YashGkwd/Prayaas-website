@@ -1,0 +1,18 @@
+.container{
+    height: 15em;
+
+}
+
+.card{
+    height: 10em;
+    width: 10em;
+}
+.name_container{
+    position: absolute;
+    top:1em;
+   
+
+    height: 3em;
+    width: 70em;
+
+}
