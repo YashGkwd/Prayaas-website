@@ -7,6 +7,7 @@ import Events from "./components/Events/Events";
 import Contribute from "./components/Contribute/Contribute";
 import Team from "./components/Team/Team";
 import "./App.css"
+import Event from './components/Events/Events';
 
 const App = () => {
   return (
@@ -20,9 +21,10 @@ const App = () => {
     <Route path="/Team" element={<Team />}></Route>
     </Routes>
   </div>
+  
   </BrowserRouter>
-    
-  )
-}
-
-export default App
+    );
+  };
+  
+  export default App;
+  

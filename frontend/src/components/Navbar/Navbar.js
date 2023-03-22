@@ -7,6 +7,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
         <img src={logo} alt="" />
+        
         <ul className="nav-menu">
             <Link to="/Events">
                 <li>Events</li>
@@ -18,9 +19,10 @@ export default function Navbar() {
                 <li>Team</li>
                 </Link>
             <Link to={""}> 
-            <button className='primaryBtn'>Log Out</button>
+            <button className='primaryBtn'>Donate</button>
             </Link>
         </ul>
+        
     </div>
   );
 }
