@@ -9,6 +9,9 @@ export default function Navbar() {
         <img src={logo} alt="" />
         
         <ul className="nav-menu">
+        <Link to="/">
+                <li>Home</li>
+                </Link>
             <Link to="/Events">
                 <li>Events</li>
                 </Link>

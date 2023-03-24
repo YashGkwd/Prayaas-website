@@ -1,0 +1,13 @@
+.container{
+    height: 15em;
+    width: 36em;
+    margin-top: -1.5em;
+}
+.pos-title{
+    padding-left: 1.5em ;
+}
+.rounded-circle{
+margin: 2em;
+height: 12em;
+width: 12em;
+}

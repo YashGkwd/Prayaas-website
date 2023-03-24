@@ -1,0 +1,21 @@
+
+.bg{
+   width: 100vw;
+   height: 20em;
+   z-index: -1;
+}
+.team-title{
+   margin-left: 2em;
+  padding-top: 0.5em;
+}
+.card-con{
+   height: 16em;
+   width: 100vw;
+  
+}
+/* .container2{
+    position: absolute;
+    top:4em;
+    height: 22em;
+   width: 70em
+} */
