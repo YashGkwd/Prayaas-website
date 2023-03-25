@@ -10,6 +10,11 @@
     perspective: 10px;
 }
 
+.slide-con{
+    height: 40vh;
+    width: 100vw;
+
+}
 .container{
     position:relative;
     height: 100%;

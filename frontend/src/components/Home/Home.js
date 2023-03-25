@@ -4,14 +4,23 @@ import Foreground from '../../assets/foreground.png'
 import Background4 from '../../assets/background4.jpg'
 import "./Home.css"
 import HeaderSocials from './HeaderSocials.jsx'
-
-
+import Slidder from './Slidder'
+import Card from '../Team/Card'
+import Slide from './Slide'
 const Home = () => {
+    const slides=[
+      <Slide name="yash" review="it was a wonderful experience...."/>,
+      <Slide  name="akash" review="it was a very nice experience...."/>,
+      <Slide  name="yashasvi" review="it isa good place..vvvertyftht rheththrrthfthfthnfghnfgbhfgbsdfb dfh th teh th rtrhth th th rt ththt th thrth thy rthr t .."/>,
+    ]
+
+    
   return (
+    <>
       <div id="wrapper"> 
             <div class="container">
                 <img src={Background} alt="" className='background' />
-                {/* <img src={Foreground} alt="" className='foreground' /> */}
+                <img src={Foreground} alt="" className='foreground' />
                 <h1>Prayaas</h1>
                 <HeaderSocials/>
             </div>
@@ -30,7 +39,10 @@ const Home = () => {
                 </div>
             </section>
       </div>
-      
+      <div className='slide-con'>
+      <Slidder slides={slides}/>
+      </div>
+      </>  
       
   )
 }

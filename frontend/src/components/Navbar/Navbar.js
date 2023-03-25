@@ -15,14 +15,11 @@ export default function Navbar() {
             <Link to="/Events">
                 <li>Events</li>
                 </Link>
-            <Link to="/Contribute">
-                <li>Contribute</li>
-                </Link>
             <Link to="/Team">
                 <li>Team</li>
                 </Link>
-            <Link to={""}> 
-            <button className='primaryBtn'>Donate</button>
+            <Link to="/Contribute"> 
+            <button className='primaryBtn'>Contribute</button>
             </Link>
         </ul>
         
