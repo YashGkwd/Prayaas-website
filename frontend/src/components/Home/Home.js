@@ -7,6 +7,7 @@ import HeaderSocials from './HeaderSocials.jsx'
 import Slidder from './Slidder'
 import Card from '../Team/Card'
 import Slide from './Slide'
+
 const Home = () => {
     const slides=[
       <Slide name="yash" review="it was a wonderful experience...."/>,
@@ -38,10 +39,10 @@ const Home = () => {
                     </p>
                 </div>
             </section>
-      </div>
-      <div className='slide-con'>
+      </div> 
+       <div className='slide-con'>
       <Slidder slides={slides}/>
-      </div>
+      </div> 
       </>  
       
   )

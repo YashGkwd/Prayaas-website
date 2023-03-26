@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+  }
+
+  .navbar2{
+    width:100%;
+    height:5em;
+    display: grid;
+    grid-template-columns: 4em 1fr 0.7fr 2.5fr 1fr 1.5em ;
+    background-color: orange;
+    box-shadow:0px 4px 10px -10px;
+  }
+  .navbar2.trans{
+    background-color:transparent;
+  }
+
+.active{
+    color: black;
+    font-size:20px ;
+}
+.nav2-menu{
+   
+    font-size: 18px;
+    font-family: Arial;
+    font-style: none;
+   
+   
+}
+
+.nav2-menu li{ 
+    position: relative; 
+   
+}
+.nav2-menu a{
+    text-decoration: none;
+    font-weight: bold;
+   
+   
+
+}
+.nav2-menu a:before{
+    content: "";
+    position: absolute;
+    top:100%;
+    width:0;
+    height: 2px;
+    background-color: rgb(26, 0, 223);   
+    transition: all 0.3s linear;
+}
+
+.nav2-menu a:hover:before{
+    width:100%;
+  
+}
+.logo{
+    grid-column: 2/3;
+    height:inherit; 
+    background-image: url("C:\\Users\\91932\\Desktop\\WEB DEV\\Prayaas-website\\frontend\src\\assets\\background1.jpg");
+   background-size: cover;
+  }
+
+.nav2-menu {
+    display: flex;
+    height: inherit;
+    grid-column: 4/5;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav2-media-icons{
+    display: flex;
+    flex-direction: row-reverse;
+    height: inherit;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+ul{
+    list-style: none;
+}
+
+
