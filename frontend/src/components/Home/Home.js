@@ -4,47 +4,57 @@ import Foreground from '../../assets/foreground.png'
 import Background4 from '../../assets/background4.jpg'
 import "./Home.css"
 import HeaderSocials from './HeaderSocials.jsx'
-import Slidder from './Slidder'
-import Card from '../Team/Card'
-import Slide from './Slide'
-
-const Home = () => {
-    const slides=[
-      <Slide name="yash" review="it was a wonderful experience...."/>,
-      <Slide  name="akash" review="it was a very nice experience...."/>,
-      <Slide  name="yashasvi" review="it isa good place..vvvertyftht rheththrrthfthfthnfghnfgbhfgbsdfb dfh th teh th rtrhth th th rt ththt th thrth thy rthr t .."/>,
-    ]
-
-    
+import {Parallax} from 'react-parallax'
+import Card from "../Team/Card"
+function Home() {
   return (
-    <>
-      <div id="wrapper"> 
-            <div class="container">
-                <img src={Background} alt="" className='background' />
-                <img src={Foreground} alt="" className='foreground' />
-                <h1>Prayaas</h1>
-                <HeaderSocials/>
-            </div>
-            <section>
-                <h2 class="secHeading">About Us</h2>
-                <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore eius necessitatibus tenetur, at sequi! Atque ipsum consequuntur exercitationem illum aperiam explicabo repudiandae, ducimus soluta minus mollitia. Sequi, ullam eaque debitis sint corporis blanditiis, illo nisi temporibus necessitatibus optio non et modi quidem. At eius omnis maxime, magnam quaerat ab.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis dolorum molestias dicta sequi optio illum cumque rerum reprehenderit pariatur in aliquam excepturi consequuntur illo et, quam est officia quidem expedita doloremque beatae iusto non. Consequuntur iste reiciendis temporibus dicta fuga eaque fugit eius repellendus enim vero expedita, nesciunt quam?
+    // <div>
+    //   <div id="wrapper" > 
+    //         <div className="container">
+    //             <img src={Background} className="background" style={{width:'100vw', height:'150vh'}}/>
+    //             <img src={Foreground} className="foreground" />
+    //             <h1>ADVENTURE</h1>
+    //         </div>
+
+    //         <section>
+    //             <h2 className="secHeading">Adventure Time</h2>
+    //             <p className="text">
+    //                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore eius necessitatibus tenetur, at sequi! Atque ipsum consequuntur exercitationem illum aperiam explicabo repudiandae, ducimus soluta minus mollitia. Sequi, ullam eaque debitis sint corporis blanditiis, illo nisi temporibus necessitatibus optio non et modi quidem. At eius omnis maxime, magnam quaerat ab.
+    //                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis dolorum molestias dicta sequi optio illum cumque rerum reprehenderit pariatur in aliquam excepturi consequuntur illo et, quam est officia quidem expedita doloremque beatae iusto non. Consequuntur iste reiciendis temporibus dicta fuga eaque fugit eius repellendus enim vero expedita, nesciunt quam?
+    //             </p>
+
+    //             <div className="bg bg1">
+    //             <img src={Background4} alt="" />
+    //             <h2 className="desc">BIKING</h2>
+    //             </div>
+
+
+    //         </section>
+    //     </div>
+    // </div>
+
+    <div className='Home'>
+      <Parallax strength={600} bgImage={Background}>
+        <div className='content'>
+          <div className='text-content'>
+            Normal Parallax
+          </div>
+        </div>
+
+      </Parallax>
+      <section>
+                <h2 className="secHeading" style={{color:'red'}}>About Us</h2>
+                <p className="text" style={{color:'black'}}>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore eius necessitatibus tenetur, at sequi! Atque ipsum consequuntur exercitationem illum aperiam explicabo repudiandae, ducimus soluta minus mollitia. Sequi, ullam eaque debitis sint corporis blanditiis, illo nisi temporibus necessitatibus optio non et modi quidem. At eius omnis maxime, magnam quaerat ab.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis dolorum molestias dicta sequi optio illum cumque rerum reprehenderit pariatur in aliquam excepturi consequuntur illo et, quam est officia quidem expedita doloremque beatae iusto non. Consequuntur iste reiciendis temporibus dicta fuga eaque fugit eius repellendus enim vero expedita, nesciunt quam?
                 </p>
-                <div class="bg bg1">
-                    <h2 className="desc">What we do?</h2>
-                    <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore eius necessitatibus tenetur, at sequi! Atque ipsum consequuntur exercitationem illum aperiam explicabo repudiandae, ducimus soluta minus mollitia. Sequi, ullam eaque debitis sint corporis blanditiis, illo nisi temporibus necessitatibus optio non et modi quidem. At eius omnis maxime, magnam quaerat ab.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis dolorum molestias dicta sequi optio illum cumque rerum reprehenderit pariatur in aliquam excepturi consequuntur illo et, quam est officia quidem expedita doloremque beatae iusto non. Consequuntur iste reiciendis temporibus dicta fuga eaque fugit eius repellendus enim vero expedita, nesciunt quam?
-                    </p>
-                </div>
-            </section>
-      </div> 
-       <div className='slide-con'>
-      <Slidder slides={slides}/>
-      </div> 
-      </>  
-      
+             </section>
+      <section>
+      <h2 className="secHeading" style={{color:'green'}}>Our Work</h2>
+      </section>
+     
+    </div>
+
   )
 }
 

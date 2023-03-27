@@ -8,6 +8,7 @@ import Contribute from "./components/Contribute/Contribute";
 import Team from "./components/Team/Team";
 import "./App.css"
 import Event from './components/Events/Events';
+import "../src/components/Home/Home.css"
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
       <div className="app-navbar"> 
     <Navbar2 />
     </div>
-    <div className='app-component'>
+    <div className='app-component' >
     <Routes>
     <Route path="/" element={<Home />}></Route>
     <Route path="/Events" element={<Events/>}></Route>

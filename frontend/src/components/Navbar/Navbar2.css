@@ -58,7 +58,7 @@
 .logo{
     grid-column: 2/3;
     height:inherit; 
-    background-image: url("C:\\Users\\91932\\Desktop\\WEB DEV\\Prayaas-website\\frontend\src\\assets\\background1.jpg");
+    background-image: url("../../assets/background1.jpg");
    background-size: cover;
   }
 
