@@ -26,8 +26,8 @@
   padding: 30px 50px;
   background: #344fda;
   cursor: pointer;
-  margin-right: 20px;
-  margin-left: 20px;
+  /* margin-right: 20px; */
+  margin-left: 10px;
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;

@@ -10,7 +10,7 @@ function Footer() {
       <a href="#" className='footer__logo'>Prayaas</a>
 
       <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/Events">Events</a></li>
         <li><a href="/Contribute">Contribute</a></li>
         <li><a href="/Team">Team</a></li>
