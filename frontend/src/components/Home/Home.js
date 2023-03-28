@@ -6,6 +6,7 @@ import "./Home.css"
 import HeaderSocials from './HeaderSocials.jsx'
 import {Parallax} from 'react-parallax'
 import Card from "../Team/Card"
+import Slider from './Slider'
 function Home() {
   return (
     // <div>
@@ -32,7 +33,7 @@ function Home() {
     //         </section>
     //     </div>
     // </div>
-
+  
     <div className='Home'>
       <Parallax strength={600} bgImage={Background}>
         <div className='content'>
@@ -52,7 +53,12 @@ function Home() {
       <section>
       <h2 className="secHeading" style={{color:'green'}}>Our Work</h2>
       </section>
-     
+
+      
+      <div className='slider-cont'>
+     <Slider/> 
+     </div>
+ 
     </div>
 
   )

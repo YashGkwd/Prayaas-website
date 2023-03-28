@@ -6,7 +6,7 @@ import {FaInstagramSquare} from 'react-icons/fa';
 export default function Navbar() {
     const[navtrans,setNavtrans] = useState(true);
 const bgtrans=()=>{
-    if(window.scrollY>=100){
+    if(window.scrollY>=500){
         setNavtrans(false)
     }
     else{
