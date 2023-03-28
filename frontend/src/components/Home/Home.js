@@ -54,9 +54,12 @@ function Home() {
       <h2 className="secHeading" style={{color:'green'}}>Our Work</h2>
       </section>
 
-      
+    <div>
+   <h2>GALLERY</h2>
       <div className='slider-cont'>
+       
      <Slider/> 
+     </div>
      </div>
  
     </div>
