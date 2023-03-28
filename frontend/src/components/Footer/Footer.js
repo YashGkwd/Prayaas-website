@@ -11,9 +11,9 @@ function Footer() {
 
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#contribute">Contribute</a></li>
-        <li><a href="#team">Team</a></li>
+        <li><a href="/Events">Events</a></li>
+        <li><a href="/Contribute">Contribute</a></li>
+        <li><a href="/Team">Team</a></li>
       </ul>
       
       <div className="footer__socials">

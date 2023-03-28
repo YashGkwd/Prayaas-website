@@ -9,6 +9,7 @@ import Team from "./components/Team/Team";
 import "./App.css"
 import Event from './components/Events/Events';
 import "../src/components/Home/Home.css"
+import Footer from "../src/components/Footer/Footer"
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
     <Route path="/Team" element={<Team />}></Route>
     </Routes>
     </div>
+    <Footer/>
   </div>
   
   </BrowserRouter>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Background from '../../assets/background.png'
+import Background1 from '../../assets/background1.jpg'
 import Foreground from '../../assets/foreground.png'
 import Background4 from '../../assets/background4.jpg'
 import "./Home.css"
@@ -7,6 +8,7 @@ import HeaderSocials from './HeaderSocials.jsx'
 import {Parallax} from 'react-parallax'
 import Card from "../Team/Card"
 import Slider from './Slider'
+import Programs from './Programs'
 function Home() {
   return (
     // <div>
@@ -52,15 +54,18 @@ function Home() {
              </section>
       <section>
       <h2 className="secHeading" style={{color:'green'}}>Our Work</h2>
+      <Programs/>
       </section>
 
+    <section>
     <div>
-   <h2>GALLERY</h2>
+    <h2 className="secHeading" style={{color:'green'}}>GALLERY</h2>
       <div className='slider-cont'>
        
      <Slider/> 
      </div>
      </div>
+     </section>
  
     </div>
 
