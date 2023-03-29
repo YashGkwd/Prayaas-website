@@ -9,6 +9,8 @@ import {Parallax} from 'react-parallax'
 import Card from "../Team/Card"
 import Slider from './Slider'
 import Programs from './Programs'
+import ExpSlider from './ExpSlider'
+import ExpCard from './ExpCard'
 function Home() {
   return (
     // <div>
@@ -59,13 +61,21 @@ function Home() {
 
     <section>
     <div>
-    <h2 className="secHeading" style={{color:'green'}}>GALLERY</h2>
-      <div className='slider-cont'>
-       
+    <h2  style={{color:'green'}}>GALLERY</h2>
+      <div className='slider-cont'>    
      <Slider/> 
      </div>
      </div>
      </section>
+   
+     <div>
+    <h2  style={{color:'green'}}>Experience </h2>
+      <div className='exp-cont'>    
+     <ExpSlider/> 
+     {/* <ExpCard/> */}
+     </div>
+     </div>
+    
  
     </div>
 

@@ -1,14 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 
-/* .Programs{
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Raleway", Arial, sans-serif;
-  background: #7f9ead;
-  
-} */
+
 .Programs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,7 +8,7 @@
     font-family: "Raleway", Arial, sans-serif;
     background: #7f9ead;
 }
-.card {
+.cardd {
   position: relative;
   width: 30vw;
   height: 45vh;
@@ -26,17 +18,17 @@
   padding: 30px 50px;
   background: #344fda;
   cursor: pointer;
-  /* margin-right: 20px; */
+  
   margin-left: 10px;
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.card:hover {
+.cardd:hover {
   height: 70vh;
 }
-.card::before{
+.cardd::before{
     content: 'Mountain';
 }
 
@@ -45,10 +37,11 @@
   width: 30vw;
   height: 50vh;
   transform: translateY(-80px);
+  
   z-index: 01;
 }
 
-img {
+.imgbox img {
   width: 40vh;
   height: 40vh;
   border-radius: 10px;
@@ -59,12 +52,12 @@ img {
   margin-top: 7rem;
   padding: 10px 20px;
   text-align: center;
-  /* transform: translateY(-450px); */
+  
   opacity: 0;
-  /* transition: 0.3s; */
+ 
 }
 
-.card:hover > .content {
+.cardd:hover > .content {
   opacity: 1;
   transform: translateY(-180px);
 }
