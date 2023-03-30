@@ -97,9 +97,10 @@ section{
     padding: 5px 15px;
     transform: translate(-50%, -50%);
     background: grey;
-    color: white;
+    color: rgb(246, 9, 9);
     border-radius: 20px;
     font-size: 50px;
+   
 }
 
 .Home{

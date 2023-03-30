@@ -40,13 +40,14 @@ function Home() {
   
     <div className='Home'>
       <Parallax strength={600} bgImage={Background}>
-        <div className='content'>
+      <div className='content'>
           <div className='text-content'>
-            Normal Parallax
+            Prayass
           </div>
         </div>
-
       </Parallax>
+     
+
       <section>
                 <h2 className="secHeading" style={{color:'red'}}>About Us</h2>
                 <p className="text" style={{color:'black'}}>
