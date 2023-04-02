@@ -14,7 +14,7 @@ function Events() {
   return (
     <>
     <div className='event-cont ' >
-   { reg && <RegisterForm/>}
+   { reg && <RegisterForm getReg={getReg}/>}
        <h2 className='event-title'>EVENTS at PRAYAAS</h2>
     </div>
  

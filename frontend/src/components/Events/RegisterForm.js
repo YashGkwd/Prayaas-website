@@ -1,13 +1,25 @@
 import React, { useState } from 'react'
+import { FaWindowClose } from 'react-icons/fa';
 
-function RegisterForm() {
+
+function RegisterForm({getReg}) {
   const [name, SetName] = useState("")
   const [cont, SetCont] = useState("")
   const [add, SetAdd] = useState("")
   const [wish, SetWish] = useState("")
-
+  const [ reg, Setreg] = useState(false)
+  
+  function handleClose(){
+    Setreg(!reg);
+    getReg(reg)
+  }
   function postData(){
-   
+    console.log({
+      name:name,
+      contact:cont,
+     Address:  add,
+     wish_description:wish
+  })
     fetch("http://localhost:5000/register",{
       method:"post",
       headers:{
@@ -16,7 +28,7 @@ function RegisterForm() {
       body:JSON.stringify({
           name:name,
           contact:cont,
-         Address:  add,
+         address:  add,
          wish_description:wish
       })
 
@@ -40,6 +52,8 @@ function RegisterForm() {
         <div className="modal-content"> 
             <div className="modal-header"> 
                 <h3 className="modal-title"> Registration for Event name</h3> 
+                
+            <div onClick={handleClose}><FaWindowClose/></div>
             </div> 
             <div className="modal-body">
             <div className="form-group">

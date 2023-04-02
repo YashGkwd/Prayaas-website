@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose")
 const cors = require("cors");
+require("./Models/registerSchema")
 const REGISTER = mongoose.model("REGISTER");
 
 
@@ -15,4 +16,4 @@ app.use(express.json());
 app.use(cors())
 app.use(require("./router/router"))
 
-app.listen(3000);
+app.listen(5000);
