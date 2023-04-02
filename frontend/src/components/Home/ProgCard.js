@@ -6,7 +6,7 @@ function ProgCard({title, img, content}) {
  
   return (
     <div>
-       <div className="cardd">
+       <div className="cardd"> 
           <div className="imgbox">
            <img src={img} />
             

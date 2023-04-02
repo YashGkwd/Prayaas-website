@@ -24,7 +24,7 @@ function Programs() {
     //           </p>
     //         </div>
     //       </div>
-    //     )
+    //     ) 
     // }
   return (
     <div className='Programs'>
