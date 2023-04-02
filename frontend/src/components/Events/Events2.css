@@ -1,172 +1,139 @@
-/* Styling the body */
-/* body {
-    margin: 0;
-    padding: 0;
-} */
-  
-/* Styling section, giving background
-    image and dimensions */
-section {
+.event-cont{
+    position: relative;
+    height: 60vh; 
     width: 100%;
+    background-image: url("C:\\Users\\91932\\Desktop\\WEB DEV\\Prayaas-website\\frontend\\src\\assets\\background1.jpg");
+   
+}
+
+.event-title{
+position: absolute;
+bottom: 10px;
+left:2em;
+font-size: 50px;
+font-weight: bolder;
+color: orange;
+}
+
+.event-card{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    height: auto;
+    width: 90vw;
+    padding: 10px;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 15px;
+}
+.event-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 30px;
+
+
+}
+.event-detail{
+    display: grid;
+    grid-template-rows: 6fr 2fr;
+    
+}
+
+.register-btn {
+       
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 8px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 10px;
+  }
+.regist-btn-cont{
+    padding-left: 30px;
+    justify-self: start;
+    
+}
+.register-btn:hover{
+    background-color: #2d76f6; /* Green */
+
+}
+.event-info p{
+    text-align: start;
+}
+
+
+.event-img{
+   object-fit: contain;
+   margin-right: 5px;
+
+}
+
+
+
+/* ------------------------------------- */
+
+
+.modal, .overlay {
+   
+    width: 100vw;
     height: 100vh;
-    background:
-url('https://media.geeksforgeeks.org/wp-content/uploads/20210408155049/gfg9.png');
-    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
 }
-  
-/* Styling the left floating section */
-section .leftBox {
-    width: 50%;
-    height: 100%;
-    float: left;
-    padding: 50px;
-    box-sizing: border-box;
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+
 }
-  
-/* Styling the background of
-    left floating section */
-section .leftBox .content {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    transition: .5s;
-}
-  
-/* Styling the hover effect 
-    of left floating section */
-section .leftBox .content:hover {
-    background: #e91e63;
-}
-  
-/* Styling the header of left
-    floating section */
-section .leftBox .content h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 50px;
-    text-transform: uppercase;
-}
-  
-/* Styling the paragraph of
-    left floating section */
-section .leftBox .content p {
-    margin: 10px 0 0;
-    padding: 0;
-}
-  
-/* Styling the three events section */
-section .events {
-    position: relative;
-    width: 50%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    float: right;
-    box-sizing: border-box;
-}
-  
-/* Styling the links of
-the events section */
-section .events ul {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-    padding: 40px;
-    box-sizing: border-box;
-}
-  
-/* Styling the lists of the event section */
-section .events ul li {
-    list-style: none;
-    background: #fff;
-    box-sizing: border-box;
-    height: 200px;
-    margin: 15px 0;
-}
-  
-/* Styling the time class of events section */
-section .events ul li .time {
-    position: relative;
-    padding: 20px;
-    background: #262626;
-    box-sizing: border-box;
-    width: 30%;
-    height: 100%;
-    float: left;
-    text-align: center;
-    transition: .5s;
-}
-  
-/* Styling the hover effect
-    of events section */
-section .events ul li:hover .time {
-    background: #e91e63;
-}
-  
-/* Styling the header of time
-    class of events section */
-section .events ul li .time h2 {
-    position: absolute;
-    margin: 0;
-    padding: 0;
+.modal-content {
+    height: auto;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 60px;
-    line-height: 30px;
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+    z-index: 4;
 }
-  
-/* Styling the texts of time
-class of events section */
-section .events ul li .time h2 span {
-    font-size: 30px;
+
+
+.label{
+    display: flex;
+    align-items: start;
+    margin: 5px;
 }
-  
-/* Styling the details
-class of events section */
-section .events ul li .details {
-    padding: 20px;
-    background: #fff;
-    box-sizing: border-box;
-    width: 70%;
-    height: 100%;
-    float: left;
-}
-  
-/* Styling the header of the
-details class of events section */
-section .events ul li .details h3 {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    font-size: 22px;
-}
-  
-/* Styling the lists of details
-class of events section */
-section .events ul li .details p {
-    position: relative;
-    margin: 10px 0 0;
-    padding: 0;
-    font-size: 16px;
-}
-  
-/* Styling the links of details
-class of events section */
-section .events ul li .details a {
-    display: inline-block;
+
+.submit-btn {
+       
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
     text-decoration: none;
-    padding: 10px 15px;
-    border: 1.5px solid #262626;
-    margin-top: 8px;
-    font-size: 18px;
-    transition: .5s;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 10px;
 }
-  
-/* Styling the details class's hover effect */
-section .events ul li .details a:hover {
-    background: #e91e63;
-    color: #fff;
-    border-color: #e91e63;
+textarea{
+    resize: none;
+    
+}
+
+.submit-btn:hover{
+background-color: #2d76f6; /* Green */
+
 }

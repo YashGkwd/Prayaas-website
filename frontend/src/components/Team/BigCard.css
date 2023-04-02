@@ -1,16 +1,20 @@
 
 .bg{
-   width: 100vw;
-   height: 20em;
+   height: auto;
+ 
+   padding: 15px;
+   width: 100%;
+  
    z-index: -1;
 }
 .team-title{
    margin-left: 2em;
-  padding-top: 0.5em;
+   padding-top: 0.5em;
 }
 .card-con{
-   height: 16em;
-   width: 100vw;
+   
+   padding: 20px;
+   width: 100%;
   
 }
 /* .container2{

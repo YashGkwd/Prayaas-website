@@ -7,11 +7,11 @@ function BigCard({color,title}) {
   return (
     <>
     <div className={`bg ${clr} `}>
-    <h2 className='team-title text-start'>{title}</h2>
+   <h2 className='team-title text-start'>{title}</h2>
      <div className={"card-con d-flex flex-row align-items-center"}>     
-            <Card/>
-            <Card/> 
-          </div>
+     <Card/>
+     <Card/> 
+          </div> 
           </div>
 
     </>
