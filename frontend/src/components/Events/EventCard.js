@@ -3,10 +3,11 @@ import RegisterForm from './RegisterForm'
 
 
 function EventCard({img,details,register,getReg}) {
-  const [ reg, Setreg] = useState(true)
+  const [ reg, Setreg] = useState()
  
    const registerfun = () => {
-    Setreg(!reg)
+    Setreg(true)
+  
     getReg(reg);
    }
 

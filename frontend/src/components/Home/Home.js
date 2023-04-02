@@ -41,7 +41,7 @@ function Home() {
     <div className='Home'>
       <Parallax strength={600} bgImage={Background}>
       <div className='home-content'>
-          <div className='home-home-text-content'>
+          <div className='home-text-content'>
             Prayass
           </div>
         </div>
