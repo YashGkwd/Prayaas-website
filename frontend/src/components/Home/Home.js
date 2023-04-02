@@ -22,8 +22,8 @@ function Home() {
     //         </div>
 
     //         <section>
-    //             <h2 className="secHeading">Adventure Time</h2>
-    //             <p className="text">
+    //             <h2 className="home-secHeading">Adventure Time</h2>
+    //             <p className="home-text">
     //                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore eius necessitatibus tenetur, at sequi! Atque ipsum consequuntur exercitationem illum aperiam explicabo repudiandae, ducimus soluta minus mollitia. Sequi, ullam eaque debitis sint corporis blanditiis, illo nisi temporibus necessitatibus optio non et modi quidem. At eius omnis maxime, magnam quaerat ab.
     //                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis dolorum molestias dicta sequi optio illum cumque rerum reprehenderit pariatur in aliquam excepturi consequuntur illo et, quam est officia quidem expedita doloremque beatae iusto non. Consequuntur iste reiciendis temporibus dicta fuga eaque fugit eius repellendus enim vero expedita, nesciunt quam?
     //             </p>
@@ -40,37 +40,37 @@ function Home() {
   
     <div className='Home'>
       <Parallax strength={600} bgImage={Background}>
-      <div className='content'>
-          <div className='text-content'>
+      <div className='home-content'>
+          <div className='home-home-text-content'>
             Prayass
           </div>
         </div>
       </Parallax>
      
 
-      <section>
-                <h2 className="secHeading" style={{color:'red'}}>About Us</h2>
-                <p className="text" style={{color:'black'}}>
+      <section className='home-section'>
+                <h2 className="home-secHeading" style={{color:'red'}}>About Us</h2>
+                <p className="home-text" style={{color:'black'}}>
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore eius necessitatibus tenetur, at sequi! Atque ipsum consequuntur exercitationem illum aperiam explicabo repudiandae, ducimus soluta minus mollitia. Sequi, ullam eaque debitis sint corporis blanditiis, illo nisi temporibus necessitatibus optio non et modi quidem. At eius omnis maxime, magnam quaerat ab.
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis dolorum molestias dicta sequi optio illum cumque rerum reprehenderit pariatur in aliquam excepturi consequuntur illo et, quam est officia quidem expedita doloremque beatae iusto non. Consequuntur iste reiciendis temporibus dicta fuga eaque fugit eius repellendus enim vero expedita, nesciunt quam?
                 </p>
              </section>
-      <section>
-      <h2 className="secHeading" style={{color:'green'}}>Our Work</h2>
+      <section className='home-section'>
+      <h2 className="home-secHeading" style={{color:'green'}}>Our Work</h2>
       <Programs/>
       </section>
 
-    <section>
+    <section className='home-section'>
     <div>
-    <h2  style={{color:'green'}}>GALLERY</h2>
+    <h2 className="home-secHeading" style={{color:'green'}}>GALLERY</h2>
       <div className='slider-cont'>    
      <Slider/> 
      </div>
      </div>
      </section>
    
-     <div>
-    <h2  style={{color:'green'}}>Experience </h2>
+     <div >
+    <h2 className="home-secHeading" style={{color:'green'}}>Experience </h2>
       <div className='exp-cont'>    
      <ExpSlider/> 
      {/* <ExpCard/> */}

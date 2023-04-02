@@ -1,18 +1,18 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
-} */
-/* .Home{
+}
+.Home{
     overflow-x: hidden;
-} */
+}
 
 
 .home-content{
     height: 100vh;
 }
-.home-text-content{
+.home-home-text-content{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,19 +25,20 @@
     
 }
 
-section{
+.home-section{
     background-color: rgb(255, 255, 255);
     color:rgb(255, 255, 255);
     padding:5rem 0;
     position: relative;
 }
 
-.secHeading{
+.home-secHeading{
     font-size:5rem;
     padding:0 10rem;
+    text-align: center;
 }
 
-.text{
+.home-text{
     font-size:1.5rem;
     padding: 0 10rem;
     margin: 5rem 0;
