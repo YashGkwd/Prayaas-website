@@ -1,15 +1,18 @@
 import React from 'react'
 import "./Card.css"
-function Card({title}) {
+function Card({title,batch,img,branch,email}) {
   return (
     <>
    
    
-     <div className="container" >
-      <img src="https://i.stack.imgur.com/5Kgaq.jpg?s=192&g=1" className="rounded-circle" alt="..."/>
-      <div className='name-con text-start'>
-        <h2>Prof Name</h2>
-        <p>this is some info about prof from ECE dept  and something something</p>
+     <div className="team-card-cont" >
+      <div className="rounded-circle" style={{backgroundImage:`url(${img})`,backgroundSize:"cover"}}></div>
+      {/* <img src={img} className="rounded-circle" alt="..."/> */}
+      <div className='team-name-cont'>
+        <h2>{title}</h2>
+        <p >{branch}<br/>
+            {batch}<br/>
+           {email}</p>
         </div>
       </div>
     

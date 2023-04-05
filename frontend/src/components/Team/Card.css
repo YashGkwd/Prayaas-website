@@ -1,6 +1,8 @@
-.container{
+.team-card-cont{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     height: 15em;
-    width: 100%;
+    width: 50%;
     margin-top: -1.5em;
 }
 .pos-title{
@@ -10,4 +12,21 @@
 margin: 2em;
 height: 12em;
 width: 12em;
+border-style: solid;
+border-color: rgb(255, 171, 14);
+
+border-width: 5px;
+}
+
+.team-name-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    
+}
+
+.team-name-cont p{
+    text-align: start;
+
 }
