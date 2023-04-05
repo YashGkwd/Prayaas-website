@@ -7,7 +7,15 @@
 }
 
 .title{
-    font-size: 5em;
-   color: rgb(67, 235, 98);
+
+    font-size: 4em;
+
+    width:100vw;
+    display: flex;
+    justify-content: start;
+    margin-left: 1em;
+  font-weight: bold;
+   color: rgb(255, 234, 0);
+   text-shadow: 2px 4px 5px rgb(58, 57, 57);
 }
 

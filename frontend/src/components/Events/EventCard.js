@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import RegisterForm from './RegisterForm'
 
 
+
 function EventCard({img, details, register, getReg}) {
   const [ reg, Setreg] = useState(true)
- 
+
    const registerfun = () => {
+   
     Setreg(true)
   
     getReg(reg);
@@ -26,6 +28,7 @@ function EventCard({img, details, register, getReg}) {
 
         </div>
         <div className='regist-btn-cont'>
+         
         {register?<button type="button" onClick={registerfun} class="register-btn">Register</button>:<p>coming soon</p>}
        
         </div>

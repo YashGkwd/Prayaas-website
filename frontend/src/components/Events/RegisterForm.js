@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaWindowClose } from 'react-icons/fa';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function RegisterForm({getReg}) {
   const [name, SetName] = useState("")
@@ -9,11 +10,22 @@ function RegisterForm({getReg}) {
   const [wish, SetWish] = useState("")
   const [ reg, Setreg] = useState(false)
   
+
+  
   function handleClose(){
     Setreg(!reg);
     getReg(reg)
   }
   function postData(){
+    
+    
+    if(isNaN(Number(cont))){
+      console.log(Number(cont))
+     toast.warn("Invalid Contact")
+     return
+  }
+
+   
     console.log({
       name:name,
       contact:cont,
@@ -35,8 +47,11 @@ function RegisterForm({getReg}) {
       })
   .then(res=>res.json()).then(
       data=>{console.log(data)
+        if(data.error){
+          toast.warn(data.error)   
+        }
           if(data.message){
-             
+            toast.success(data.message)      
           }
       }
       )
@@ -85,6 +100,7 @@ function RegisterForm({getReg}) {
 
               </div> 
             <div className="modal-footer">
+            <ToastContainer/>
             <button type="button" onClick={postData} className="submit-btn">Submit</button>
              </div> 
         </div> 

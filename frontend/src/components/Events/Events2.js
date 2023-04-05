@@ -6,6 +6,7 @@ import RegisterForm from './RegisterForm';
 
 function Events() {
   const [ reg, Setreg] = useState(false)
+ 
   function getReg(x){
     Setreg(x)
     console.log(x)

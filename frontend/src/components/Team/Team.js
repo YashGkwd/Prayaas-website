@@ -12,7 +12,7 @@ function Team() {
     <>
         <div className='team-cont d-flex justify-content-center align-items-end'>
         
-          <h2 className='title '>OUR TEAM at PRAYAAS</h2>
+          <div className='title '>OUR TEAM at PRAYAAS</div>
         </div>
        
         <BigCard color={true }  card2="true" title="Proffesor Incharge"  img1={sir1} img2={sir2} card1Title="DR. G N Nimbarte" card2Title="DR. Dilip Peshwe" card1branch="Email: gnimbarte@hss.vnit.ac.in"  card2branch="Email: dilippeshwe@mme.vnit.ac.in"/>
