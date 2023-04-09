@@ -11,11 +11,11 @@ function ProgCard({title, img, content}) {
            <img src={img} />
             
           
-            <h2 className='mt-2'>{title}</h2>
+            <h2 className='prog-title mt-2'>{title}</h2>
            
           </div>
     
-          <div className="content">
+          <div className="prog-content">
             <p>
              {content}
             </p>

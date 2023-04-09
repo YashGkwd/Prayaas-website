@@ -10,6 +10,7 @@ import "./App.css"
 import Events2 from './components/Events/Events2';
 import "../src/components/Home/Home.css"
 import Footer from "../src/components/Footer/Footer"
+import Success from './components/Contribute/Success';
 
 const App = () => {
   return (
@@ -22,8 +23,9 @@ const App = () => {
     <Routes>
     <Route path="/" element={<Home />}></Route>
     <Route path="/Events" element={<Events2/>}></Route>
-    <Route path="/Contribute" element={<Contribute/>}></Route>    
+    <Route path="/contribute" element={<Contribute/>}></Route>    
     <Route path="/Team" element={<Team />}></Route>
+    <Route path="/contribute/success" element={<Success/>}></Route>
     </Routes>
     </div>
     <Footer/>

@@ -19,7 +19,7 @@ import gallery_15 from "../../assets/gallery/gallery_15.jpg"
 import gallery_16 from "../../assets/gallery/gallery_16.jpeg"
 import gallery_17 from "../../assets/gallery/gallery_17.png"
 import gallery_18 from "../../assets/gallery/gallery_18.jpg"
-import gallery_19 from "../../assets/gallery/blood_donate.jpg"
+import gallery_19 from "../../assets/events/blood_donate.jpg"
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";

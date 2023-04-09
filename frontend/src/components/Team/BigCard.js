@@ -7,6 +7,7 @@ function BigCard({color,title,card2,card1Title,card1batch,img1,img2, card2Title,
   return (
     <>
     <div className={`bg ${clr} `}>
+    
    <h2 className='team-title text-start'>{title}</h2>
    <hr
       style={{ borderTop: "4px solid orange",width:"25em",marginLeft:"3em"}}
