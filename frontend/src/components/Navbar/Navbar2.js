@@ -3,6 +3,7 @@ import logo from '../../assets/background.png'
 import './Navbar2.css';
 import {NavLink} from "react-router-dom"
 import {FaInstagramSquare} from 'react-icons/fa';
+
 export default function Navbar() {
     const[navtrans,setNavtrans] = useState(true);
 const bgtrans=()=>{
@@ -18,7 +19,7 @@ window.addEventListener("scroll",bgtrans);
   return (
     <div className={navtrans?"navbar2 trans": "navbar2"}>
        
-        <div  className='logo'>
+        <div  className='logo' >
  {/* <img  src={logo} alt="" /> */}
         </div>
         <ul className="nav2-menu">
