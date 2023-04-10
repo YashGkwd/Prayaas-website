@@ -1,33 +1,44 @@
 import React, { useState } from 'react'
 import RegisterForm from './RegisterForm'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
-function EventCard({img,details,register,getReg}) {
-  const [ reg, Setreg] = useState()
- 
+function EventCard({img, details, register, getReg}) {
+  const [ reg, Setreg] = useState(true)
+  const [ readmore, Setreadmore] = useState(false)
+  const handlereadmore = () => {
+    Setreadmore(!readmore)
+   }
+
    const registerfun = () => {
     Setreg(true)
-  
-    getReg(reg);
+    getReg(reg,details.name);
+   }
+   const notregfun = () => {
+      toast.warn("Registration has not started yet")
    }
 
   return (
     <>
-    <div className='event-card border border-5'>
+     
+    <div className='event-card border border-1'>
+  
         <div className='event-image' style={{backgroundImage:`url(${img})`,backgroundSize:"cover"}}>
           
         </div>
         <div className="event-detail">
         <div className='event-info justify-content-start'>
-            <h2>{details.name}</h2>
-            <h4>{details.date}</h4>
-            <p>{details.para}</p>
+            <h4>{details.name}</h4>
+            {/* <h3>{details.date}</h3> */}
+           {readmore?<p>{details.para}</p>:<p>{details.para.slice(0,400)+"......"}</p>} 
                 
 
         </div>
         <div className='regist-btn-cont'>
-        {register?<button type="button" onClick={registerfun} class="register-btn">Register</button>:<p>coming soon</p>}
-       
+         
+        {register?<button type="button" onClick={registerfun} class="register-btn">Register</button>:<button type="button" onClick={notregfun} style={{backgroundColor:"rgb(151, 151, 151)"}} class="register-btn">Register</button>}
+        <button type="button" onClick={handlereadmore}class="readmore-btn">{readmore?"Read Less":"Read More"}</button>
         </div>
                
                 

@@ -47,7 +47,7 @@ window.addEventListener("scroll",bgtrans);
                     </li>
         </ul>
         
-        <ul className="nav2-media-icons">
+        {/* <ul className="nav2-media-icons">
             <li>
                 <a href='#'>
                     <FaInstagramSquare className="insta"/>
@@ -63,7 +63,7 @@ window.addEventListener("scroll",bgtrans);
                 <FaInstagramSquare className="insta"/>
                 </a>
             </li>
-            </ul>
+            </ul> */}
         
     </div>
   );

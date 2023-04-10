@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { FaWindowClose } from 'react-icons/fa';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-
-function RegisterForm({getReg}) {
+function RegisterForm({getReg, ename}) {
   const [name, SetName] = useState("")
   const [cont, SetCont] = useState("")
   const [add, SetAdd] = useState("")
@@ -13,7 +14,18 @@ function RegisterForm({getReg}) {
     Setreg(!reg);
     getReg(reg)
   }
+  
+ 
   function postData(){
+    
+    
+    if(isNaN(Number(cont))){
+      console.log(Number(cont))
+     toast.warn("Invalid Contact")
+     return
+  }
+
+   
     console.log({
       name:name,
       contact:cont,
@@ -35,8 +47,11 @@ function RegisterForm({getReg}) {
       })
   .then(res=>res.json()).then(
       data=>{console.log(data)
+        if(data.error){
+          toast.warn(data.error)   
+        }
           if(data.message){
-             
+            toast.success(data.message)      
           }
       }
       )
@@ -51,7 +66,7 @@ function RegisterForm({getReg}) {
     <div className="modal-dialog" style={{overflowY:"scroll", maxHeight:"85%",  marginTop: "50px", marginBottom:"50px"}} > 
         <div className="modal-content"> 
             <div className="modal-header"> 
-                <h3 className="modal-title"> Registration for Event name</h3> 
+                <h3 className="modal-title"> Registration for {ename}</h3> 
                 
             <div onClick={handleClose}><FaWindowClose/></div>
             </div> 
@@ -85,6 +100,7 @@ function RegisterForm({getReg}) {
 
               </div> 
             <div className="modal-footer">
+          
             <button type="button" onClick={postData} className="submit-btn">Submit</button>
              </div> 
         </div> 

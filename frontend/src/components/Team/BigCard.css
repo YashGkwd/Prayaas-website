@@ -1,7 +1,7 @@
 
 .bg{
    height: auto;
- 
+   
    padding: 15px;
    width: 100%;
   
@@ -10,6 +10,7 @@
 .team-title{
    margin-left: 2em;
    padding-top: 0.5em;
+   
 }
 .card-con{
    
@@ -23,3 +24,4 @@
     height: 22em;
    width: 70em
 } */
+

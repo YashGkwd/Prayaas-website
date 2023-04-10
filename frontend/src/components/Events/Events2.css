@@ -9,10 +9,14 @@
 .event-title{
 position: absolute;
 bottom: 10px;
-left:2em;
-font-size: 50px;
-font-weight: bolder;
-color: orange;
+left:0.7em;
+font-size: 5em;
+width:90vw;
+display: flex;
+justify-content: start;
+font-weight: bold;
+color:  rgb(255, 102, 0);;
+text-shadow: 1px 5px 5px rgb(0, 0, 0);
 }
 
 .event-card{
@@ -21,10 +25,10 @@ color: orange;
     height: auto;
     width: 90vw;
     padding: 10px;
-    box-shadow: 10px 10px 5px lightblue;
+    box-shadow: 10px 10px 5px rgb(169, 169, 169);
     border-radius: 20px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 .event-info{
     display: flex;
@@ -34,15 +38,40 @@ color: orange;
 
 
 }
+
+.event-info h4{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(255, 102, 0);;
+}
+
+.event-info h3{
+    font-size: 1em;
+}
 .event-detail{
     display: grid;
-    grid-template-rows: 6fr 2fr;
+    grid-template-rows: 3fr 0.5fr;
     
 }
 
+.readmore-btn{
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
 .register-btn {
        
-        background-color: #4CAF50; /* Green */
+        background-color: rgb(245, 179, 48);; /* Green */
         border: none;
         color: white;
         padding: 8px 32px;
@@ -58,7 +87,7 @@ color: orange;
     
 }
 .register-btn:hover{
-    background-color: #2d76f6; /* Green */
+    background-color: rgb(255, 102, 0);; /* Green */
 
 }
 .event-info p{
