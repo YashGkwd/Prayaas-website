@@ -3,7 +3,8 @@ import Navbar2 from './components/Navbar/Navbar2'
 import { BrowserRouter, Routes, Route
 } from 'react-router-dom';
 import Home from "./components/Home/Home";
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Contribute from "./components/Contribute/Contribute";
 import Team from "./components/Team/Team";
 import "./App.css"
@@ -18,6 +19,7 @@ const App = () => {
     <div className="App">
       <div className="app-navbar"> 
     <Navbar2 />
+    <ToastContainer/>
     </div>
     <div className='app-component' >
     <Routes>

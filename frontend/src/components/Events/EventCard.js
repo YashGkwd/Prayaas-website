@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import RegisterForm from './RegisterForm'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function EventCard({img, details, register, getReg}) {
@@ -12,12 +13,17 @@ function EventCard({img, details, register, getReg}) {
 
    const registerfun = () => {
     Setreg(true)
-    getReg(reg);
+    getReg(reg,details.name);
+   }
+   const notregfun = () => {
+      toast.warn("Registration has not started yet")
    }
 
   return (
     <>
+     
     <div className='event-card border border-1'>
+  
         <div className='event-image' style={{backgroundImage:`url(${img})`,backgroundSize:"cover"}}>
           
         </div>
@@ -31,7 +37,7 @@ function EventCard({img, details, register, getReg}) {
         </div>
         <div className='regist-btn-cont'>
          
-        {register?<button type="button" onClick={registerfun} class="register-btn">Register</button>:<p>coming soon</p>}
+        {register?<button type="button" onClick={registerfun} class="register-btn">Register</button>:<button type="button" onClick={notregfun} style={{backgroundColor:"rgb(151, 151, 151)"}} class="register-btn">Register</button>}
         <button type="button" onClick={handlereadmore}class="readmore-btn">{readmore?"Read Less":"Read More"}</button>
         </div>
                

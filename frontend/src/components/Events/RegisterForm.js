@@ -3,19 +3,19 @@ import { FaWindowClose } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-function RegisterForm({getReg}) {
+function RegisterForm({getReg, ename}) {
   const [name, SetName] = useState("")
   const [cont, SetCont] = useState("")
   const [add, SetAdd] = useState("")
   const [wish, SetWish] = useState("")
   const [ reg, Setreg] = useState(false)
   
-
-  
   function handleClose(){
     Setreg(!reg);
     getReg(reg)
   }
+  
+ 
   function postData(){
     
     
@@ -66,7 +66,7 @@ function RegisterForm({getReg}) {
     <div className="modal-dialog" style={{overflowY:"scroll", maxHeight:"85%",  marginTop: "50px", marginBottom:"50px"}} > 
         <div className="modal-content"> 
             <div className="modal-header"> 
-                <h3 className="modal-title"> Registration for Event name</h3> 
+                <h3 className="modal-title"> Registration for {ename}</h3> 
                 
             <div onClick={handleClose}><FaWindowClose/></div>
             </div> 
@@ -100,7 +100,7 @@ function RegisterForm({getReg}) {
 
               </div> 
             <div className="modal-footer">
-            <ToastContainer/>
+          
             <button type="button" onClick={postData} className="submit-btn">Submit</button>
              </div> 
         </div> 

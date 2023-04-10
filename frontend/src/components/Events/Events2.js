@@ -8,19 +8,23 @@ import tree_plant from "../../assets/events/tree_plantation.jpg"
 import daan_utsav from "../../assets/events/daan_utsav.jpg"
 import vigyasa from "../../assets/events/vigyasa.jpg"
 import guest_lec from "../../assets/events/guest_lec.jpg"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Events() {
   const [ reg, Setreg] = useState(false)
- 
-  function getReg(x){
+  const [ename,Setename] = useState("");
+  function getReg(x,ename){
     Setreg(x)
-    console.log(x)
+  Setename(ename);
+
   }
  
   return (
     <>
+   
     <div className='event-cont ' >
-   { reg && <RegisterForm getReg={getReg}/>}
+   { reg && <RegisterForm getReg={getReg} ename={ename}/>}
        <div className='event-title'>Events at Prayaas</div>
     </div>
  
@@ -36,15 +40,15 @@ function Events() {
      details={{name:"Guest Lecture", date:"12/4/23", 
     para: "Prayaas Club not just contributes to social causes but also inspires others to do so. We host  a lot of guest lectures throughout the year. Guests with their expertise in different social activities share their wisdom and experience with the students . And we receive a lot of good responses and support for this. Recently in August 2022 Mr. Amrut Bang sir visited VNIT campus for guest lecture and shared information about his initiative of NIRMAN, a framework for flourishing life."}}       />
 
-    <EventCard img={vigyasa} register={true} getReg={getReg} 
+    <EventCard img={vigyasa} register={false} getReg={getReg} 
      details={{name:"Vigyaasa", date:"12/4/23", 
     para: "Vigyaasa is an initiative by the Prayaas Club to instill curiosity in young minds and provide a platform for underprivileged students to showcase their problem-solving skills. The students from government schools visit VNIT with their projects, and the institute rewards the group with the best project. A few days before the event, the club members visit government schools near the college, meet the principals, and explain the initiative. The interested students are then interviewed, and the selected students are divided into groups. Some students from the club act as 'mentors' for the students participating from the school. These mentors visit the school regularly, helping the students with the scientific concepts, checking on the model progress, and motivating the students. The club invites Honourable Director of VNIT and other professors and Dean's to attend the program and grade the projects. On the day of the event, the mentors escort the participating students to the college with their projects. Here, they explain the ideas behind their projects and answer the questions that the grading team asks. The program ends with the announcement of the winners and a prize distribution ceremony. The students are then given a college tour before being escorted back to their schools."}}       />
 
-    <EventCard img={bg1} register={true} getReg={getReg} 
+    <EventCard img={bg1} register={false} getReg={getReg} 
      details={{name:"Wish Tree", date:"12/4/23", 
     para: "We all grown up with the infinite wishes in our minds. Some of them were fulfilled and some are the one for which we are working hard. At the initial stages of our life we have got immense support from our parents to fullfill our wishes and we are fortunate for that. But not everyone in the society get that amount of support and belief. For them we the Prayas team of VNIT, Nagpur are trying to help to know the wishes and fulfilling them with the best of our capabilities.Prayaas club members go to various NGOs, Orphanages, government schools etc to  interact with the children, know their wishes ,collect them with their names and other details and Hang the Wish cards on Our 'Wish tree'.The wishes kept hanging on the tree for people, professors, students of our college read them and whoever is wanting to help them they Fulfill the wish.Prayaas team always work their best for helping the society and spreading the social awareness. Wish tree is one such event of Prayas of helping the society."}}       />
 
-    <EventCard img={tree_plant} register={true} getReg={getReg} 
+    <EventCard img={tree_plant} register={false} getReg={getReg} 
      details={{name:"Tree plantation", date:"12/4/23", 
     para: "Planting a tree might sound tedious but it is actually more interesting in action. We, Prayaas the social club of VNIT celebrate on Independence Day by adding a philanthropic touch to it. We have pledged to make the campus greener by planting more trees and we have planted a total of 81 saplings in the premises of VNIT and still going on. DR. PM Padole Sir, the director of VNIT Nagpur, enthusiastically took part in this event, as did Peshwe Sir and Gopi Nimbarte Sir, the teacher in charge of the prayaas club. Many students gather and make this event successful."}}       />
    
