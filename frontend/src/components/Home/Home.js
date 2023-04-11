@@ -59,14 +59,13 @@ function Home() {
      </div>
      </section>
    
-     <div >
+     {/* <div >
     <h2 className="home-secHeading" >Experience </h2>
       <div className='exp-cont'>    
      <ExpSlider/> 
-     {/* <ExpCard/> */}
      </div>
-     </div>
-    
+     </div>  */}
+     
  
     </div>
 

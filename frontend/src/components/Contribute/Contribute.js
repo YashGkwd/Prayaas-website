@@ -18,7 +18,7 @@
 //       return
 //     }
 //     console.log( {name:"yuvraj", amount:amt})
-//     fetch("http://localhost:5000/contribute/pay",{
+//     fetch("/contribute/pay",{
 //       method:"post",
 //       headers:{
 //          "Content-Type" : "application/json"
