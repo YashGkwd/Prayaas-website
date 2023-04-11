@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose")
 const cors = require("cors");
 const path = require("path")
-const PORT =  5000 || process.env.port;
+const PORT =  5000 || process.env.PORT;
 require("./Models/registerSchema")
 const REGISTER = mongoose.model("REGISTER");
 
