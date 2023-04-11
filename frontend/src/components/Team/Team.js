@@ -1,6 +1,6 @@
 import React from 'react'
-import  "./Team.css"
-import Card from './Card'
+
+import team_pic from "../../assets/team/team_bg.jpeg"
 import BigCard from './BigCard'
 import social_sec from "../../assets/team/social_secretary.jpg"
 import tea1 from "../../assets/team/treasurer_1.jpg"
@@ -11,7 +11,7 @@ function Team() {
   return (
     <>
         <div className='team-cont d-flex justify-content-center align-items-end'>
-        
+         <img className='team-pic' src={team_pic}/>
           <div className='title '>Team of Prayaas</div>
         </div>
         <br/>

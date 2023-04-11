@@ -24,13 +24,13 @@ function EventCard({img, details, register, getReg}) {
      
     <div className='event-card border border-1'>
   
-        <div className='event-image' style={{backgroundImage:`url(${img})`,backgroundSize:"cover"}}>
-          
-        </div>
+        {/* <div className='event-image' style={{backgroundImage:`url(${img})`,backgroundSize:"cover"}}> */}
+        <img className='event-pic' src={img}/>  
+    
         <div className="event-detail">
         <div className='event-info justify-content-start'>
             <h4>{details.name}</h4>
-            {/* <h3>{details.date}</h3> */}
+    
            {readmore?<p>{details.para}</p>:<p>{details.para.slice(0,400)+"......"}</p>} 
                 
 
