@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.64a4aa68.css",
-    "main.js": "/static/js/main.16c88147.js",
+    "main.js": "/static/js/main.e0ed1be0.js",
     "static/media/gallery_13.jpg": "/static/media/gallery_13.4b16cfe681cd2021252a.jpg",
     "static/media/gallery_1.jpg": "/static/media/gallery_1.e4ed58d5eb65ed830640.jpg",
     "static/media/gallery_17.png": "/static/media/gallery_17.184aab50a4b98689e2aa.png",
@@ -26,7 +26,6 @@
     "static/media/background1.jpg": "/static/media/background1.7c8c0a777cea9f8f7cdf.jpg",
     "static/media/guest_lec.jpg": "/static/media/guest_lec.ef8075655e4b7cb1dfa4.jpg",
     "static/media/gallery_11.jpg": "/static/media/gallery_11.36961d914fe9c83272b7.jpg",
-    "static/media/background3.jpg": "/static/media/background3.a35451babc8227b020db.jpg",
     "static/media/gallery_16.jpeg": "/static/media/gallery_16.abb8e7c24cf15e1fd1a0.jpeg",
     "static/media/treasurer_1.jpg": "/static/media/treasurer_1.f34060c4efa34cea7864.jpg",
     "static/media/sir2.png": "/static/media/sir2.bfa017ec6a5751b73a37.png",
@@ -45,10 +44,10 @@
     "static/media/pteach.jpeg": "/static/media/pteach.1555f46ecab8973d6c3e.jpeg",
     "index.html": "/index.html",
     "main.64a4aa68.css.map": "/static/css/main.64a4aa68.css.map",
-    "main.16c88147.js.map": "/static/js/main.16c88147.js.map"
+    "main.e0ed1be0.js.map": "/static/js/main.e0ed1be0.js.map"
   },
   "entrypoints": [
     "static/css/main.64a4aa68.css",
-    "static/js/main.16c88147.js"
+    "static/js/main.e0ed1be0.js"
   ]
 }

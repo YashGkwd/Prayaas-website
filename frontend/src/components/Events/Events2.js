@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import EventCard from './EventCard';
-import bg1 from "../../assets/background3.jpg"
+import bg1 from "../../assets/team/team_bg.jpeg"
 import wish_tree from "../../assets/events/wish_tree.jpeg"
 import RegisterForm from './RegisterForm';
 import blood_donate from "../../assets/events/blood_donate.jpg"
@@ -23,21 +23,21 @@ function Events() {
   return (
     <>
    
-    <div id="top" className='event-cont ' >
+    <div className='event-cont ' >
     <img className='event-page-pic' src={bg1}/>
        <div className='event-title'>Events at Prayaas</div>
       
     </div>
     { reg && <RegisterForm getReg={getReg} ename={ename}/>}
-    <EventCard img={daan_utsav} register={true} getReg={getReg} 
+    <EventCard img={daan_utsav} register={false} getReg={getReg} 
      details={{name:"Daan Utsav", date:"12/4/23", 
     para:"Daan Utsav, also known as the Joy of Giving Week, is  an event conducted by the NGO Goonj all over India. It runs for eight days every year. It is an initiative where people are encouraged to donate their old, usable belongings. This material is then distributed among needy people. The Prayaas Club helps the NGO conduct it in Nagpur.Before the event begins, the members of the Prayaas Club distribute pamphlets in parks and other public places, telling people more about the event and urging them to come forward and donate. About 20 centres are set up across Nagpur, two in VNIT, to receive the donated material. 	At the end of the event, the collected material is sorted into different categories. These include Men's clothes, Women's clothes, Children's clothes, Utensils, Blankets and many more. This sorted material is then sent to Goonj's headquarters in Delhi. From there, the material is placed in kit bags and distributed among needy people."}}  />
    
-   <EventCard img={blood_donate} register={true} getReg={getReg} 
+   <EventCard img={blood_donate} register={false} getReg={getReg} 
      details={{name:"Blood Donation", date:"12/4/23", 
     para: "We PRAYAAS club conduct BLOOD DONATION camp in our institute every year on the occasions of Republic day and Independence day in collaboration with NMC Blood Bank, Government medical college, and Indira Gandhi Medical college which are known to be the prominent medical colleges in the city. This is our effort to contribute our best towards saving lives of people. VNIT students, professors and nagpurkars donate blood as a sign of patriotism and kindness on these days."}}       />
 
-    <EventCard img={guest_lec} register={true} getReg={getReg} 
+    <EventCard img={guest_lec} register={false} getReg={getReg} 
      details={{name:"Guest Lecture", date:"12/4/23", 
     para: "Prayaas Club not just contributes to social causes but also inspires others to do so. We host  a lot of guest lectures throughout the year. Guests with their expertise in different social activities share their wisdom and experience with the students . And we receive a lot of good responses and support for this. Recently in August 2022 Mr. Amrut Bang sir visited VNIT campus for guest lecture and shared information about his initiative of NIRMAN, a framework for flourishing life."}}       />
 
