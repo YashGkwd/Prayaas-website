@@ -21,7 +21,7 @@ window.addEventListener("scroll",bgtrans);
   return (
     <div className={navtrans?"navbar2 trans": "navbar2"}>
        
-        <div  className='logo'>
+        <div  className='logo' >
  {/* <img  src={logo} alt="" /> */}
         </div>
         <ul className="nav2-menu">
