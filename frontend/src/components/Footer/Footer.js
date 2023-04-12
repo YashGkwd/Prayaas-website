@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.css'
 import {FaFacebookF} from 'react-icons/fa'
 import {FiInstagram} from 'react-icons/fi'
-import {IoLogoTwitter} from 'react-icons/io'
+import {AiFillLinkedin} from 'react-icons/ai'
 
 function Footer() {
   return (
@@ -17,9 +17,9 @@ function Footer() {
       </ul>
       
       <div className="footer__socials">
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://instagram.com"><FiInstagram/></a>
-        <a href="https://twitter.com"><IoLogoTwitter/></a>
+        <a href="https://www.facebook.com/VNIT.PRAYAAS/"><FaFacebookF/></a>
+        <a href="https://instagram.com/prayaas__vnit?igshid=YmMyMTA2M2Y="><FiInstagram/></a>
+        <a href="https://in.linkedin.com/in/prayaas-vnit-10b808112"><AiFillLinkedin/></a>
       </div>
 
       <div className="footer__copyright">
