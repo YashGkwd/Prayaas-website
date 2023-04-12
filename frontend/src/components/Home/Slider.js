@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import gallery_1 from "../../assets/gallery/gallery_1.jpg"
@@ -31,9 +31,9 @@ import { EffectCoverflow, Pagination } from "swiper";
 
 export default function Slider() {
  const gallery_img = [
-  gallery_1, gallery_2,gallery_3,gallery_4,gallery_5,gallery_6,  ,
+   gallery_2,gallery_3,gallery_4,gallery_5,gallery_6,  ,
   gallery_18, gallery_7,gallery_8 ,gallery_9 ,
-  gallery_10, gallery_11 , gallery_12 , gallery_19,gallery_13 ,gallery_17, gallery_14 , gallery_15 , gallery_16 ]
+  gallery_10, gallery_11 , gallery_12  ,gallery_17, gallery_14 , gallery_15 , gallery_16 ]
   
   return (
     <>

@@ -32,7 +32,7 @@ function RegisterForm({getReg, ename}) {
      Address:  add,
      wish_description:wish
   })
-    fetch("http://localhost:5000/register",{
+    fetch("/register",{
       method:"post",
       headers:{
          "Content-Type" : "application/json"
@@ -59,6 +59,7 @@ function RegisterForm({getReg, ename}) {
   return (
   <>
   <div className="">
+    <ToastContainer/>
           <div  className="overlay"></div>
          
 

@@ -1,9 +1,9 @@
 import React from 'react'
-import Background from '../../assets/backgrounde2.png'
+import Background from '../../assets/i1.png'
 import Background1 from '../../assets/background1.jpg'
 import Foreground from '../../assets/foreground.png'
 import Background4 from '../../assets/background4.jpg'
-import "./Home.css"
+
 import HeaderSocials from './HeaderSocials.jsx'
 import {Parallax} from 'react-parallax'
 import Card from "../Team/Card"
@@ -20,13 +20,14 @@ function Home() {
       <div className='paralax'>
       <Parallax strength={600} bgImage={Background}>
       <div className='home-content'>
-          <div className='home-text-content'>
+      <div className='home-title-content'>
             Prayaas
             <h2><BsDash/>Social Club of VNIT Nagpur</h2>
           </div>
-        </div>
+      </div>
       </Parallax>
       </div>
+     
      
 
       <section className='home-section'>
@@ -58,14 +59,13 @@ function Home() {
      </div>
      </section>
    
-     <div >
+     {/* <div >
     <h2 className="home-secHeading" >Experience </h2>
       <div className='exp-cont'>    
      <ExpSlider/> 
-     {/* <ExpCard/> */}
      </div>
-     </div>
-    
+     </div>  */}
+     
  
     </div>
 
