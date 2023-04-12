@@ -8,9 +8,8 @@ function ProgCard({title, img, content}) {
     <div>
        <div className="cardd"> 
           <div className="imgbox">
-           <img src={img} />
+           <img style={(title=="Raksha Bandhan"?{width:"30vw"}:{})} src={img} />
             
-          
             <h2 className='prog-title mt-2'>{title}</h2>
            
           </div>

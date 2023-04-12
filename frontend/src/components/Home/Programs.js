@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Programs.css"
+
 import bookbank from '../../assets/our work/book_bank.jpeg'
 import p_teach from '../../assets/our work/pteach.jpeg'
 import ngovisit from '../../assets/our work/ngo_visit.jpg'

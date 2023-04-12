@@ -278,16 +278,23 @@ background-color: #2d76f6; /* Green */
   width:100vw;
 }
 .home-title-content{
- 
+  width:70vw;
   position: absolute;
   top:30%;
   left: 3rem;
+  text-align: left;
   /* transform: translate(-50%, -50%);   */
   color: white;
   font-size: 7rem;
   text-shadow: 0.1px 5px 5px black;
   
   
+}
+
+.home-title-content h2{
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  text-align: left;
 }
 
 .home-section{
@@ -325,7 +332,10 @@ background-color: #2d76f6; /* Green */
 .cardd {
   position: relative;
   width: 30vw;
-  height: 45vh;
+  height: 40vh;
+  display:flex;
+  flex-direction: column;
+  
   border-radius: 1rem;
   box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
@@ -349,7 +359,8 @@ background-color: #2d76f6; /* Green */
 .imgbox {
   position: relative;
   width: 30vw;
-  height: 50vh;
+  height: auto;
+  margin-bottom: 3rem;
   transform: translateY(-80px); 
   z-index: 01;
 }
@@ -362,7 +373,7 @@ background-color: #2d76f6; /* Green */
 }
 
 .prog-content {
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding: 0.2rem 1rem;
   text-align: center;
   color: black;
@@ -493,6 +504,17 @@ ul{
       font-size: 90%;
    }
    
+  .imgbox{
+    margin-bottom: 4rem;
+  }
+
+  .cardd:hover {
+    height: 65vh;
+  }
+  .cardd {
+    height: 32vh;
+  }
+
 .home-content{
   position: relative;
   height:40rem;
@@ -505,7 +527,15 @@ ul{
    html{
       font-size: 100%;
    }
-  
+
+   .cardd:hover {
+    width: 40vw;
+    height: 80vh;
+  }
+  .cardd {
+    height: 40vh;
+    width: 40vw;
+  }
 .Programs{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -530,6 +560,19 @@ ul{
 .nav2-menu{
   display:none;
 }
+
+.cardd:hover {
+  width: 40vw;
+  height: 79vh;
+}
+.cardd{
+  width: 45vw;
+}
+.prog-content{
+  font-size: 0.8rem;
+}
+
+
 .mobmenu a{
   text-decoration-line: none;
     color: orange; 
@@ -574,8 +617,24 @@ ul{
     font-size: 4rem;
     left: 2rem;
   }
+  .imgbox{
+    width: auto;
+  }
+ 
+  .prog-title {
+    width: 50vw;
+  }
+  .cardd:hover {
+    width: 70vw;
+    height: 75vh;
+  }
+  .cardd{
+    width: 70vw;
+  }
+  
+  
   .element{
-    height:65vh;
+    height:55vh;
     width:100vw;
     
   }
@@ -607,10 +666,7 @@ ul{
   .home-text{
     font-size: 1rem;
   }
-     .home-title-content h2{
-      margin-left: 2rem;
-      font-size: 1.3rem;
-    }
+  
    .title{
       font-size: 3em;
    }
@@ -645,6 +701,38 @@ ul{
    html{
       font-size: 70%;
    }
+
+   .imgbox{
+    width: auto;
+    height: auto;
+    margin-bottom: 6rem;
+  }
+  
+  .imgbox img{
+    width: 65vw;
+    height: auto;
+  }
+ 
+  .prog-title {
+    width: 65vw;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .prog-content{
+    font-size: 1.2rem;
+  }
+  .cardd:hover {
+    width: 80vw;
+    height: 60vh;
+  }
+  .cardd{
+    width: 75vw;
+    height: 30vh;
+    margin-bottom: 3rem;
+    margin-top: 7rem;
+
+  }
+  
    .event-title{
     font-size: 3rem;
    }
