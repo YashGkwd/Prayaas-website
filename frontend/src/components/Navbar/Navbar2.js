@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import logo from '../../assets/background.png'
-import './Navbar2.css';
 import {NavLink} from "react-router-dom"
 import {FaInstagramSquare} from 'react-icons/fa';
 import {FaWindowClose} from 'react-icons/fa';
@@ -32,23 +30,23 @@ window.addEventListener("scroll",bgtrans);
                      </NavLink>
                     </li>
               
-                    <li> 
+                    <li  > 
                     <NavLink to="/Events"  >
                         Events 
                      </NavLink>
                     </li>
-                    <li> 
+                    <li  > 
                     <NavLink to="/Team#top"  >
                         Team
                      </NavLink>
-                    </li>
+                    </li >
                     {/* <li> 
                     <NavLink to="/Contribute" >
                         Contribute
                      </NavLink>
                     </li> */}
         </ul>
-        <div className='hamburger' onClick={()=>setmobmenu(!mobmenu)}>{mobmenu?<FaWindowClose/>: <GiHamburgerMenu/>}</div>
+        <div className='hamburger' onClick={()=>{setmobmenu(!mobmenu)}}>{mobmenu?<FaWindowClose/>: <GiHamburgerMenu/>}</div>
        {/* -----mobmenu------ */}
        <div className="mobmenu"  style={mobmenu?{}:{visibility:"hidden"}}>
        <li> 

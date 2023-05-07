@@ -1,5 +1,5 @@
 import React from 'react'
-import Background from '../../assets/background.png'
+
 function ProgCard({title, img, content}) {
  
 
@@ -8,7 +8,7 @@ function ProgCard({title, img, content}) {
     <div>
        <div className="cardd"> 
           <div className="imgbox">
-           <img style={(title=="Raksha Bandhan"?{width:"30vw"}:{})} src={img} />
+           <img  src={img} />
             
             <h2 className='prog-title mt-2'>{title}</h2>
            

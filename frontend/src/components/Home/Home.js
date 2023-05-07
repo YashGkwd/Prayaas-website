@@ -1,9 +1,5 @@
 import React from 'react'
-import Background from '../../assets/i1.png'
-import Background1 from '../../assets/background1.jpg'
-import Foreground from '../../assets/foreground.png'
-import Background4 from '../../assets/background4.jpg'
-
+import Background from '../../assets/home_bg2.jpg'
 import HeaderSocials from './HeaderSocials.jsx'
 import {Parallax} from 'react-parallax'
 import Card from "../Team/Card"
@@ -18,7 +14,7 @@ function Home() {
   
     <div className='Home'>
       <div className='paralax'>
-      <Parallax strength={600} bgImage={Background}>
+      <Parallax  strength={100} bgImage={Background}>
       <div className='home-content'>
       <div className='home-title-content'>
             Prayaas
@@ -40,7 +36,7 @@ function Home() {
         The idea of a contributing one's self to the society or in fact, repaying the society
          with what it has bestowed us is an urge that couldn't be trapped within for a long time.
           The bottled conscience gave rise to the group PRAYAAS.The thought was nurtured by 
-          Mr. Pratyush Prabhakar, now an alumnus of VNITIn sept 2006, Prayaas came to existence 
+          Mr. Pratyush Prabhakar, now an alumnus of VNIT. In September 2006, Prayaas came to existence 
           which now has grown into a concrete well planned activity supported by the Technical Education 
           students which Quality Improvement Program (TEQIP), Govt. of India.<br/>
                </p> 
@@ -59,12 +55,12 @@ function Home() {
      </div>
      </section>
    
-     {/* <div >
+     <div >
     <h2 className="home-secHeading" >Experience </h2>
       <div className='exp-cont'>    
      <ExpSlider/> 
      </div>
-     </div>  */}
+     </div> 
      
  
     </div>

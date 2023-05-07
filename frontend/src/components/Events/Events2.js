@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import EventCard from './EventCard';
-import bg1 from "../../assets/team/team_bg.jpeg"
+import bg1 from "../../assets/events/event_bg.png"
 import wish_tree from "../../assets/events/wish_tree.jpeg"
 import RegisterForm from './RegisterForm';
 import blood_donate from "../../assets/events/blood_donate.jpg"

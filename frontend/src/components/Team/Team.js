@@ -16,10 +16,10 @@ function Team() {
         </div>
         <br/>
     <br/>
-        <BigCard  card2="true" title="Professor Incharge"  img1={sir1} img2={sir2} card1Title="DR. G N Nimbarte" card2Title="DR. Dilip Peshwe" card1branch="Email: gnimbarte@hss.vnit.ac.in"  card2branch="Email: dilippeshwe@mme.vnit.ac.in"/>
+        <BigCard  card2="true" title="Professor Incharge"  img2={sir1} img1={sir2} card2Title="DR. G N Nimbarte" card1Title="DR. Dilip Peshwe" card2branch="Email: gnimbarte@hss.vnit.ac.in"  card1branch="Email: dilippeshwe@mme.vnit.ac.in"/>
       
-         <BigCard color={true }  title="Social Affairs Secretary" img1={social_sec} card1Title="Ayush Jain" card1batch="BATCH: 2019-2023" card1branch="DEPARTMENT: CIVIL ENGINEERING" card1email="EMAIL: socialsec@students.vnit.ac.in"/>
-        <BigCard  title="Treasures"  card2="true" img1={tea1} img2={tea2} card1Title="Rohan Hadke" card1batch="BATCH: 2020-2024" card1branch="DEPARTMENT: CHEMICAL ENGINEERING" card1email="Email: rohanhadke21@gmail.com"  card2Title="Kajal Yadav" card2batch="BATCH: 2020-2024" card2branch="DEPARTMENT: MINING ENGINEERING" card2email="EMAIL: kajalyadav03161@gmail.com"/>
+         <BigCard color={true }  title="Social Affairs Secretary" img1={social_sec} card1Title="Ayush Jain" card1batch="Batch: 2019-2023" card1branch="Department: Civil Engineering" card1email="Email: socialsec@students.vnit.ac.in"/>
+        <BigCard  title="Treasures"  card2="true" img1={tea1} img2={tea2} card1Title="Rohan Hadke" card1batch="Batch: 2020-2024" card1branch="Department: Chemical Engineering" card1email="Email: prayaas.vnit.official@gmail.com"  card2Title="Kajal Yadav" card2batch="Batch: 2020-2024" card2branch="Department: Mining Engineering" card2email="Email: prayaas.vnit.official@gmail.com"/>
 
        
     </>

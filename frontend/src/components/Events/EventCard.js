@@ -16,7 +16,7 @@ function EventCard({img, details, register, getReg}) {
     getReg(reg,details.name);
    }
    const notregfun = () => {
-      toast.warn("Registration has not started yet")
+      toast.warn("Registration has not been started")
    }
 
   return (

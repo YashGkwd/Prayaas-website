@@ -135,7 +135,7 @@ text-shadow: 1px 5px 5px rgb(0, 0, 0);
   margin-top: 0.8rem;
   font-size: 2em;
   font-weight: bold;
-  color: rgb(255, 102, 0);;
+  color: rgb(255, 102, 0);
 }
 
 .event-pic{
@@ -271,7 +271,10 @@ background-color: #2d76f6; /* Green */
   overflow-x: hidden;
 }
 
+.exp-cont{
+  height: 24rem;
 
+}
 .home-content{
   position: relative;
   height:40rem;
@@ -284,7 +287,7 @@ background-color: #2d76f6; /* Green */
   left: 3rem;
   text-align: left;
   /* transform: translate(-50%, -50%);   */
-  color: white;
+  color: rgb(255, 102, 0);
   font-size: 7rem;
   text-shadow: 0.1px 5px 5px black;
   
@@ -293,7 +296,7 @@ background-color: #2d76f6; /* Green */
 
 .home-title-content h2{
   margin-left: 1rem;
-  font-size: 1.3rem;
+  font-size: 2rem;
   text-align: left;
 }
 
@@ -324,7 +327,7 @@ background-color: #2d76f6; /* Green */
 
 .Programs{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
     font-family: "Raleway", Arial, sans-serif;
     background: rgb(245, 179, 48);;
@@ -504,6 +507,29 @@ ul{
       font-size: 90%;
    }
    
+   blockquote p::before {
+    content: "“";
+    font-family: Georgia;
+    font-size: 6rem;
+    margin: -2rem 0 0 -2rem;
+    position: absolute;
+    top:3rem;
+    left:2.4rem;
+    
+    opacity: 0.5;
+ }
+
+ blockquote p::after {
+    content: "”";
+    font-family: Georgia;
+    font-size: 6rem;
+    position: absolute;
+    bottom:-2rem;
+    right: 2rem;
+    opacity: 0.5;
+ }
+ 
+
   .imgbox{
     margin-bottom: 4rem;
   }
@@ -527,7 +553,22 @@ ul{
    html{
       font-size: 100%;
    }
-
+   blockquote p {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .exp-cont{
+    height: auto;
+   
+  
+  }
+  .quote-card{
+    padding: 4rem;
+    height: auto;
+  
+ }
    .cardd:hover {
     width: 40vw;
     height: 80vh;
@@ -572,6 +613,9 @@ ul{
   font-size: 0.8rem;
 }
 
+.mobmenu li{
+ padding: 0.2rem;
+ }
 
 .mobmenu a{
   text-decoration-line: none;
@@ -587,11 +631,11 @@ ul{
   background-color: white;
  
   list-style: none;
-  font-size: 1.2rem
+  font-size: 1.8rem
 }
 
 .active{
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   padding-bottom: 0rem;
   border-bottom-style: none;
 }
@@ -608,11 +652,19 @@ ul{
 }
 
 .navbar2{
-  grid-template-columns: 4rem 2fr 3.7fr 6rem ;
+  grid-template-columns: 4rem 2fr 1fr 6rem ;
 }
 
 }
 @media screen and (max-width: 600px){
+  .navbar2{
+    height: 6.5rem;
+  }
+  .app-component{
+    position: relative;
+    top:-6.5em; 
+    }
+    
   .home-title-content{
     font-size: 4rem;
     left: 2rem;
@@ -690,6 +742,16 @@ ul{
     width: 90vw;
     
   }
+
+  
+  /* 
+  .hamburger{
+    grid-column: 4/5;
+    margin:3rem;
+    margin-left: 0.5rem;
+  }
+   */
+
  
 }
 
@@ -699,7 +761,7 @@ ul{
 
 @media screen and (max-width: 480px){
    html{
-      font-size: 70%;
+      font-size: 80%;
    }
 
    .imgbox{
@@ -723,7 +785,7 @@ ul{
   }
   .cardd:hover {
     width: 80vw;
-    height: 60vh;
+    height: 95vh;
   }
   .cardd{
     width: 75vw;
@@ -736,6 +798,9 @@ ul{
    .event-title{
     font-size: 3rem;
    }
+   
+
+  
 
 }
 
