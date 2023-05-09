@@ -17,8 +17,8 @@ function ProgCard({title, img, content}) {
      setIsHover(false);
   };
 
-const el = document.getElementById("progbox")
-const imgel = document.getElementById("imgboxid")
+// const el = document.getElementById("progbox")
+// const imgel = document.getElementById("imgboxid")
   return (
     <div>
       {/* {console.log(el.offsetHeight+imgel.offsetHeight)} */}
