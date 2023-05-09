@@ -14,7 +14,7 @@ function Home() {
   
     <div className='Home'>
       <div className='paralax'>
-      <Parallax  strength={100} bgImage={Background}>
+      <Parallax  strength={175} bgImage={Background}>
       <div className='home-content'>
       <div className='home-title-content'>
             Prayaas

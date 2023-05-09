@@ -352,12 +352,12 @@ background-color: #2d76f6; /* Green */
 }
 
 .cardd:hover {
-  height: 90vh;
+  height: "auto";
 }
-.cardd::before{
+/* .cardd::before{
     content: 'Mountn';
 
-}
+} */
 
 .imgbox {
   position: relative;
@@ -682,7 +682,7 @@ ul{
   }
   .cardd:hover {
     width: 70vw;
-    height: 75vh;
+    height: 59vh;
   }
   .cardd{
     width: 70vw;
@@ -776,7 +776,7 @@ ul{
   
   .imgbox img{
     width: 65vw;
-    height: auto;
+    height: 40vh;
   }
  
   .prog-title {
@@ -789,11 +789,11 @@ ul{
   }
   .cardd:hover {
     width: 80vw;
-    height: 95vh;
+    height: 72vh;
   }
   .cardd{
     width: 75vw;
-    height: 30vh;
+    height: 36vh;
     margin-bottom: 3rem;
     margin-top: 7rem;
 
@@ -817,5 +817,16 @@ ul{
   font-size: 1.5rem;
  
 }
+.cardd:hover {
+  width: 80vw;
+  height: 85vh;
+}
+.cardd{
+  width: 75vw;
+  height: 36vh;
+ 
+
+}
+
 }
 
