@@ -352,7 +352,7 @@ background-color: #2d76f6; /* Green */
 }
 
 .cardd:hover {
-  height: "auto";
+  height: 76vh;
 }
 /* .cardd::before{
     content: 'Mountn';

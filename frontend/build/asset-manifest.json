@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ee697f5.css",
-    "main.js": "/static/js/main.75a50781.js",
+    "main.css": "/static/css/main.c3a1c1bc.css",
+    "main.js": "/static/js/main.52a4d4c5.js",
     "static/media/gallery_13.jpg": "/static/media/gallery_13.4b16cfe681cd2021252a.jpg",
     "static/media/gallery_1.jpg": "/static/media/gallery_1.e4ed58d5eb65ed830640.jpg",
     "static/media/gallery_17.png": "/static/media/gallery_17.184aab50a4b98689e2aa.png",
     "static/media/gallery_3.jpg": "/static/media/gallery_3.d6db9f0927acbd196450.jpg",
+    "static/media/Prayaas_Report.pdf": "/static/media/Prayaas_Report.7b9c96777c05c5e2f024.pdf",
     "static/media/blood_donate.jpg": "/static/media/blood_donate.bd7e31d639e3297dcaa3.jpg",
     "static/media/gallery_15.jpg": "/static/media/gallery_15.559d1689ba3338cc29fb.jpg",
     "static/media/gallery_6.jpg": "/static/media/gallery_6.0289249bc97b55bc2b1c.jpg",
@@ -40,11 +41,11 @@
     "static/media/vigyasa.jpg": "/static/media/vigyasa.bd625123e6065e3fa42d.jpg",
     "static/media/pteach.jpeg": "/static/media/pteach.1555f46ecab8973d6c3e.jpeg",
     "index.html": "/index.html",
-    "main.5ee697f5.css.map": "/static/css/main.5ee697f5.css.map",
-    "main.75a50781.js.map": "/static/js/main.75a50781.js.map"
+    "main.c3a1c1bc.css.map": "/static/css/main.c3a1c1bc.css.map",
+    "main.52a4d4c5.js.map": "/static/js/main.52a4d4c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ee697f5.css",
-    "static/js/main.75a50781.js"
+    "static/css/main.c3a1c1bc.css",
+    "static/js/main.52a4d4c5.js"
   ]
 }
