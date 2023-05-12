@@ -10,6 +10,7 @@ import vigyasa from "../../assets/events/vigyasa.jpg"
 import guest_lec from "../../assets/events/guest_lec.jpg"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Prayaas_Report from "../../assets/Prayaas_Report.pdf"
 
 function Events() {
   const [ reg, Setreg] = useState(false)
@@ -26,7 +27,9 @@ function Events() {
     <div className='event-cont ' >
     <img className='event-page-pic' src={bg1}/>
        <div className='event-title'>Events at Prayaas</div>
-      
+       <a href={Prayaas_Report} download="Prayaas Report" target='_blank'>
+      <button className='btn'>Prayaas Report</button>
+      </a>
     </div>
     { reg && <RegisterForm getReg={getReg} ename={ename}/>}
     <EventCard img={daan_utsav} register={false} getReg={getReg} 
