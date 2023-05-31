@@ -97,7 +97,16 @@ border-width: 5px;
   width: 100%;
 }
 
+.report-button{
+position: absolute;
+bottom: -2rem;
+right: 1rem;
+}
 
+.report-button.btn{
+  height: 1rem;
+  width:1rem;
+  }
 .event-title{
 position: absolute;
 bottom: 1rem;
@@ -601,7 +610,9 @@ ul{
 .nav2-menu{
   display:none;
 }
-
+.report-button{
+  visibility: hidden;
+}
 .cardd:hover {
   width: 40vw;
   height: 79vh;

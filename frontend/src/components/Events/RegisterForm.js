@@ -32,7 +32,7 @@ function RegisterForm({getReg, ename}) {
      Address:  add,
      wish_description:wish
   })
-    fetch("/register",{
+    fetch("https://jade-fawn-tam.cyclic.app/register",{
       method:"post",
       headers:{
          "Content-Type" : "application/json"

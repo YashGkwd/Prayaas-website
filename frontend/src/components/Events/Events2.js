@@ -27,7 +27,7 @@ function Events() {
     <div className='event-cont ' >
     <img className='event-page-pic' src={bg1}/>
        <div className='event-title'>Events at Prayaas</div>
-       <a href={Prayaas_Report} download="Prayaas Report" target='_blank'>
+       <a className='report-button' href={Prayaas_Report} download="Prayaas Report" target='_blank'>
       <button className='btn'>Prayaas Report</button>
       </a>
     </div>
