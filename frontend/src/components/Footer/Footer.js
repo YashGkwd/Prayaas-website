@@ -15,7 +15,7 @@ function Footer() {
       return 
     }
     
-    fetch("http://localhost:5000/suggestion",{
+    fetch("https://jade-fawn-tam.cyclic.app/suggestion",{
       method:"post",
       headers:{
          "Content-Type" : "application/json"
