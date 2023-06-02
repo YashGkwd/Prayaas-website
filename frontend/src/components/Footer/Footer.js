@@ -7,14 +7,16 @@ import { ToastContainer, toast } from 'react-toastify';
 function Footer() {
   const [name,setName]=useState("");
   const [message,setMessage]=useState("");
+  const [wid,setWid]=useState(window.innerWidth);
+
 
    const handleSubmit=()=>{
-    console.log(message,name)
+    
     if(message.trim() ===""){
       toast.warn("Message cannot be empty") 
       return 
     }
-    
+  
     fetch("https://jade-fawn-tam.cyclic.app/suggestion",{
       method:"post",
       headers:{
@@ -31,10 +33,14 @@ function Footer() {
           toast.warn(data.error)   
         }
           if(data.message){
-            toast.success(data.message)      
+            toast.success("We received your suggestion")      
           }
       }
-      ).catch(error=>console.log(error))
+      ).catch(
+        error=>{console.log(error)
+      toast.error("Something went wrong")} )
+      setName("");
+      setMessage("");
   }
    
   return (
@@ -42,11 +48,11 @@ function Footer() {
       <div className='footer'>
      <div className='suggestion-box' >
       <div style={{display:"flex", flexDirection:"column",alignItems:"flex-start", color:"white"}}>
-      <h1>Write to us</h1>
+      <h1>Drop your suggestions</h1>
       <label style={{fontSize:"1.2rem"}}>Name {"(optional)"}</label>
-      <input onChange={(e)=>setName(e.target.value)} style={{textAlign:"left", fontSize:"1rem"}} type='text' name='name' size={53}/>
-      <label  style={{fontSize:"1.2rem",paddingTop:"1.5rem"}}>Message</label>
-      <textarea onChange={(e)=>setMessage(e.target.value)} style={{textAlign:"left", fontSize:"1rem"}} name="message"  rows={4} cols={55} />
+      <input onChange={(e)=>setName(e.target.value)} value={name} style={{textAlign:"left", fontSize:"1rem"}} type='text' name='name' size={wid<400?40 :48}/>
+      <label  style={{fontSize:"1.2rem",paddingTop:"1.5rem"}}>Suggestion</label>
+      <textarea onChange={(e)=>setMessage(e.target.value)} value={message} style={{textAlign:"left", fontSize:"1rem"}} name="message"  rows={4} cols={wid<400?45 :55} />
       <button className="suggest-button" onClick={()=>{ handleSubmit()}} type="submit">Send Message</button>
       </div>
      </div>
