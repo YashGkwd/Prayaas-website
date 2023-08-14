@@ -310,7 +310,7 @@ background-color: #2d76f6; /* Green */
 }
 
 .home-section{
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   color:rgb(255, 255, 255);
   padding:5rem 0;
   position: relative;
@@ -318,9 +318,9 @@ background-color: #2d76f6; /* Green */
 
 .home-secHeading{
   font-size:5rem;
-  padding:0 10rem;
+  /* padding:0 5rem; */
   text-align: center;
-  color: rgb(245, 179, 48);
+  color: #FF6600;
 }
 
 .home-text{
