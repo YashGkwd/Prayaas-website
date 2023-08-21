@@ -51,7 +51,7 @@ function Home() {
         <div>
           <section className="home-section">
             <h5 className="home-secHeading">Upcoming Events</h5>
-            <p className="home-text" style={{ color: "black" }}>
+            {/* <p className="home-text" style={{ color: "black" }}>
             <h4 className="text-gray-700 mb-1" style={{ color: '#0f0f0f', textTransform: 'uppercase', fontSize: '2.5rem', fontWeight: 'bold' }}>
   Blood Donation Camp
 </h4>
@@ -70,7 +70,7 @@ function Home() {
               alt="Event Poster 1"
               className="img-effect"
               style={{ maxWidth: "60%", height: "auto" }}
-            />
+            /> */}
           </section>
         </div>
       </div>
