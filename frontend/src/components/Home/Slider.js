@@ -30,40 +30,40 @@ import "./Slider.css";
 import { EffectCoverflow, Pagination } from "swiper";
 
 export default function Slider() {
- const gallery_img = [
-   gallery_2,gallery_3,gallery_4,gallery_5,gallery_6,  ,
-  gallery_18, gallery_7,gallery_8 ,gallery_9 ,
-  gallery_10, gallery_11 , gallery_12  ,gallery_17, gallery_14 , gallery_15 , gallery_16 ]
-  
+  const gallery_img = [
+    gallery_2, gallery_3, gallery_4, gallery_5, gallery_6, ,
+    gallery_18, gallery_7, gallery_8, gallery_9,
+    gallery_10, gallery_11, gallery_12, gallery_17, gallery_14, gallery_15, gallery_16]
+
   return (
     <>
-    <div className="swiper-cont">
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
-      
-      {gallery_img.map((img)=>{
-       return   ( <SwiperSlide>
-          <div className="element" > 
-            <img src={img} />
-            </div>
-          </SwiperSlide>)
-      })} 
-       
-        {/* <SwiperSlide>
+      <div className="swiper-cont">
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper"
+        >
+
+          {gallery_img.map((img) => {
+            return (<SwiperSlide>
+              <div className="element" >
+                <img src={img} />
+              </div>
+            </SwiperSlide>)
+          })}
+
+          {/* <SwiperSlide>
           <div className="element"> 
           <img src={gallery_1} />
           </div>
@@ -98,7 +98,7 @@ export default function Slider() {
           <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
           </div>
         </SwiperSlide>*/}
-      </Swiper> 
+        </Swiper>
       </div>
     </>
   );
