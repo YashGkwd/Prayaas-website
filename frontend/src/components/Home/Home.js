@@ -9,12 +9,12 @@ import ExpSlider from "./ExpSlider";
 import ExpCard from "./ExpCard";
 import { BsDash } from "react-icons/bs";
 import "./About.css";
-import blood_donate from "../../assets/events/blood_donation.jpeg";
+import daan_utsav from "../../assets/events/daanutsav.png";
 function Home() {
   return (
     <div className="Home">
       <div className="paralax">
-        <Parallax strength={175} bgImage={Background}>
+        <Parallax strength={50} bgImage={Background}>
           <div className="home-content">
             <div className="home-title-content">
               Prayaas
@@ -30,7 +30,7 @@ function Home() {
       <div className="container experience_container">
         <div>
           <section className="home-section">
-            <h2 className="home-secHeading">About Us</h2>
+            <h2 className="home-secHeading" style={{fontSize: "4.5rem"}}>About Us</h2>
             <p className="home-text" style={{ color: "black" }}>
               <b>PRAYAAS </b>is an official social initiative program of VNIT
               Nagpur. This program is inspired by the vision of Dr. A.P.J.Abdul
@@ -50,27 +50,90 @@ function Home() {
         </div>
         <div>
           <section className="home-section">
-            <h5 className="home-secHeading">Upcoming Events</h5>
-            {/* <p className="home-text" style={{ color: "black" }}>
-            <h4 className="text-gray-700 mb-1" style={{ color: '#0f0f0f', textTransform: 'uppercase', fontSize: '2.5rem', fontWeight: 'bold' }}>
-  Blood Donation Camp
-</h4>
-              <p className="text-gray-700 mb-1" style={{ fontSize: '1.5rem' }}>
-      <span className="info-label">Date:</span> 15th August 2023
-    </p>
-    <p className="text-gray-700 mb-1" style={{ fontSize: '1.5rem' }}>
-      <span className="info-label">Time:</span> 09:00 to 1:00 pm
-    </p>
-    <p className="text-gray-700 mb-1" style={{ fontSize: '1.5rem' }}>
-      <span className="info-label">Venue:</span> Class Room Complex
-    </p>
-            </p>
-            <img
-              src={blood_donate}
-              alt="Event Poster 1"
-              className="img-effect"
-              style={{ maxWidth: "60%", height: "auto" }}
-            /> */}
+            {" "}
+            <h1
+              style={{
+                color: "#FF6600",
+                fontSize: "4.2rem",
+                textAlign: "center",
+              }}
+            >
+              Upcoming Events
+            </h1>
+            <div className="event">
+              <h2
+                style={{
+                  color: "#000000",
+                  fontSize: "3rem",
+                  fontFamily: "Georgia",
+                  textTransform: "uppercase",
+                  letterSpacing: "2px",
+                }}
+              >
+                Daan Utsav
+              </h2>
+              <p
+                style={{
+                  fontSize: "1.2rem",
+                  lineHeight: "1.5",
+                  color: "#000000",
+                }}
+              >
+                {" "}
+                <span style={{ fontWeight: "bold", color: "#000000" }}>
+                  Desk Locations:
+                </span>{" "}
+                <br /> 1. VNIT Bajaj Nagar Gate, South Ambazari Road, Nagpur{" "}
+                <br /> 2. VNIT Health Centre, South Ambazari Road, Nagpur{" "}
+              </p>{" "}
+              <p
+                style={{
+                  fontSize: "1.2rem",
+                  lineHeight: "1.5",
+                  color: "#000000",
+                }}
+              >
+                {" "}
+                <span style={{ fontWeight: "bold" }}>Dates:</span> 7th October
+                to 15th October{" "}
+              </p>{" "}
+              <p
+                style={{
+                  fontSize: "1.2rem",
+                  lineHeight: "1.5",
+                  color: "#000000",
+                }}
+              >
+                {" "}
+                <span style={{ fontWeight: "bold" }}>Time:</span> Monday-Friday:
+                6am - 8am (morning), 6pm - 8pm (evening) <br /> Saturday-Sunday:
+                6am - 8pm{" "}
+              </p>
+              <div
+                style={{
+                  maxWidth: "50%",
+                  height: "auto",
+                  display: "block",
+                  margin: "0 auto",
+                  transition: "transform 0.2s", // Add a smooth transition
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "scale(1.5)"; // Enlarge on hover
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "scale(1)"; // Return to normal size
+                }}
+              >
+                <img
+                  src={daan_utsav}
+                  alt="Event Poster"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+            </div>{" "}
           </section>
         </div>
       </div>
